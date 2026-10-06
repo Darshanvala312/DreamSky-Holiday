@@ -1,1 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFTER DARK 🔞 | 18+ Humour. Zero Innocence.</title>
+<meta name="description" content="AFTER DARK — an 18+ fictional dark comedy experience. Dark sarcasm, savage one-liners and questionable decisions.">
+<meta name="theme-color" content="#050507">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%9E%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
 
+<!-- Atmosphere layers -->
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="flash" id="flash" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- 1. AGE GATE -->
+<section class="gate" id="gate" aria-labelledby="gateTitle">
+  <div class="gate-bg" aria-hidden="true"></div>
+  <div class="gate-inner">
+    <div class="gate-badge" aria-hidden="true">🔞</div>
+    <h1 class="gate-title glitch" id="gateTitle" data-text="18+ ONLY">18+ ONLY</h1>
+    <p class="gate-line">“Adults only. Enter at your own risk.”</p>
+    <p class="gate-line sub">“Aa jagya thodi dark chhe… ready cho?”</p>
+    <p class="gate-line sub">“यहाँ innocence की कोई guarantee नहीं है.”</p>
+    <div class="gate-actions">
+      <button class="btn btn-primary magnetic" id="enterBtn" type="button">ENTER THE DARKNESS 🖤</button>
+      <button class="btn btn-ghost magnetic" id="leaveBtn" type="button">LEAVE</button>
+    </div>
+    <p class="gate-fine">By entering you confirm you are 18 or older and that you understand this is fictional comedy.</p>
+  </div>
+</section>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="After Dark home">AFTER<span>DARK</span> <em>🔞</em></a>
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav-links" id="navLinks" aria-label="Main">
+    <a href="#wall">Jokes</a>
+    <a href="#reread">Read Again</a>
+    <a href="#nofilter">No Filter</a>
+    <a href="#adulting">Adulting</a>
+    <a href="#decision">Decisions</a>
+    <a href="#meter">Meter</a>
+    <a href="#flags">Red Flags</a>
+    <a href="#confessions">Confessions</a>
+  </nav>
+  <button class="btn btn-mini" id="darkToggle" type="button" aria-pressed="false">🌙 DEEP DARK MODE</button>
+</header>
+
+<main id="top">
+
+  <!-- 2. HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-orb orb-a" aria-hidden="true"></div>
+    <div class="hero-orb orb-b" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">🔞 18+ Humour. Zero Innocence. Maximum Chaos.</p>
+      <h1 class="hero-title">
+        <span class="line l1">WELCOME TO</span>
+        <span class="line l2 glitch" data-text="AFTER DARK.">AFTER DARK.</span>
+      </h1>
+      <p class="hero-sub">Where innocent thoughts go to retire.</p>
+      <p class="hero-tags">Dark humour • Savage sarcasm • Adult jokes • Questionable decisions</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary magnetic" href="#wall">ENTER CHAOS</a>
+        <button class="btn btn-ghost magnetic" id="heroJoke" type="button">GENERATE A JOKE</button>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </div>
+  </section>
+
+  <!-- 3. JOKE WALL -->
+  <section class="section" id="wall">
+    <header class="section-head reveal">
+      <p class="kicker">// THE WALL</p>
+      <h2 class="glitch-h" data-text="DARK HUMOUR JOKE WALL">DARK HUMOUR JOKE WALL</h2>
+      <p class="lede">Fictional. Fearless. Mildly concerning.</p>
+    </header>
+    <div class="wall">
+      <article class="card joke reveal" data-tilt><span class="tag">#COMMITMENT</span><p>I don't have commitment issues.<br>I just believe in keeping my options <b>emotionally available</b>.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#DATING</span><p>My dating life has more red flags than a Formula 1 race.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#WIFI</span><p>I like my relationships like my Wi-Fi — strong connection, no unnecessary interruptions.</p></article>
+      <article class="card joke reveal feature" data-tilt><span class="tag">#GUJLISH</span><p>Su scene chhe?<br><b>Full confusion chhe boss.</b></p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#ADULTING</span><p>Being an adult is mostly pretending you know what you're doing.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#STANDARDS</span><p>My standards are high.<br>My decisions are <b>questionable</b>.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#MOTIVATION</span><p>I don't chase people anymore.<br>I barely chase my own motivation.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#हिंदी</span><p>भाई, ये मामला हाथ से निकल चुका है।</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#ROMANCE</span><p>Romance is temporary.<br><b>Screenshots are forever.</b></p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#MYTYPE</span><p>My type?<br>Someone who understands sarcasm and respects personal space.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#OVERTHINKING</span><p>I flirt with confidence.<br>Then overthink the conversation for <b>three business days</b>.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#RED FLAGS</span><p>That's not a red flag.<br>That's a whole <b>emergency broadcast</b>.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#AVAILABILITY</span><p>My emotional availability is currently experiencing <b>technical difficulties</b>.</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#ગુજરાતી</span><p>આ તો અલગ જ લેવલની ગડબડ છે. 😂</p></article>
+      <article class="card joke reveal" data-tilt><span class="tag">#HINGLISH</span><p>Bhai, situation thodi zyada complicated ho gayi.<br>Relationship status: <b>Loading… forever.</b></p></article>
+    </div>
+  </section>
+
+  <!-- 4. DOUBLE MEANING -->
+  <section class="section" id="reread">
+    <header class="section-head reveal">
+      <p class="kicker">// SUBTEXT</p>
+      <h2 class="glitch-h" data-text="READ THAT AGAIN. 👀">READ THAT AGAIN. 👀</h2>
+      <p class="lede">Your mind went there. We just built the road. <small>(Tap or hover to reveal.)</small></p>
+    </header>
+    <div class="reread-grid">
+      <button class="flip reveal" type="button" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front"><em>“I like things complicated.”</em><i>👀 tap to reveal</i></span>
+          <span class="face back"><em>Especially when my brain could have chosen the easy option.</em></span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front"><em>“I need someone who can handle me.”</em><i>👀 tap to reveal</i></span>
+          <span class="face back"><em>Mostly my sarcasm.</em></span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front"><em>“Things got intense very quickly.”</em><i>👀 tap to reveal</i></span>
+          <span class="face back"><em>It was just a competitive game of UNO.</em></span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front"><em>“We spent the whole night together.”</em><i>👀 tap to reveal</i></span>
+          <span class="face back"><em>Talking about absolutely nothing.</em></span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front"><em>“Bhai, raat bhar jaagna pada.”</em><i>👀 tap to reveal</i></span>
+          <span class="face back"><em>Wi-Fi slow tha. Download 99% pe atka raha.</em></span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="face front"><em>“She left me breathless.”</em><i>👀 tap to reveal</i></span>
+          <span class="face back"><em>Third floor. No lift. Wedding venue.</em></span>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 5. ONE-LINERS -->
+  <section class="section" id="nofilter">
+    <header class="section-head reveal">
+      <p class="kicker">// SAVAGE MODE</p>
+      <h2 class="glitch-h" data-text="NO FILTER. NO APOLOGY.">NO FILTER. NO APOLOGY.</h2>
+    </header>
+    <div class="liner-grid">
+      <div class="liner reveal" data-tilt><b>01</b><p>I'm not toxic. I'm just <em>premium difficulty</em>.</p></div>
+      <div class="liner reveal" data-tilt><b>02</b><p>My personality comes with a warning label.</p></div>
+      <div class="liner reveal" data-tilt><b>03</b><p>I don't need therapy. I need <em>better decisions</em>.</p></div>
+      <div class="liner reveal" data-tilt><b>04</b><p>Red flags? I prefer them aesthetically.</p></div>
+      <div class="liner reveal" data-tilt><b>05</b><p>My patience has left the chat.</p></div>
+      <div class="liner reveal" data-tilt><b>06</b><p>I came. I saw. I <em>overthought everything</em>.</p></div>
+      <div class="liner reveal" data-tilt><b>07</b><p>Flirting is easy. Maintaining a conversation is the <em>final boss</em>.</p></div>
+      <div class="liner reveal" data-tilt><b>08</b><p>My standards aren't unrealistic. Your effort is just underwhelming.</p></div>
+      <div class="liner reveal" data-tilt><b>09</b><p>Emotionally unavailable, but <em>aesthetically available</em>.</p></div>
+      <div class="liner reveal" data-tilt><b>10</b><p>I have two moods: unbothered and <em>dramatically unbothered</em>.</p></div>
+    </div>
+  </section>
+
+  <!-- 6. ADULTING DASHBOARD -->
+  <section class="section" id="adulting">
+    <header class="section-head reveal">
+      <p class="kicker">// SYSTEM STATUS</p>
+      <h2 class="glitch-h" data-text="ADULTING AFTER DARK">ADULTING AFTER DARK</h2>
+      <p class="lede">Live diagnostics of a fully functional adult. (Fully is doing a lot of work here.)</p>
+    </header>
+    <div class="dash glass reveal">
+      <div class="dash-top"><span class="dot"></span> LIVE • 02:47 AM • STATUS: <b>BARELY OPERATIONAL</b></div>
+      <div class="metrics">
+        <div class="metric" data-v="12"><div class="m-head"><span>Sleep</span><b class="val">12%</b></div><div class="bar"><i></i></div><small>Rebooting is optional, apparently.</small></div>
+        <div class="metric" data-v="4"><div class="m-head"><span>Motivation</span><b class="val">4%</b></div><div class="bar"><i></i></div><small>Running on spite and caffeine.</small></div>
+        <div class="metric" data-v="7"><div class="m-head"><span>Social Battery</span><b class="val">7%</b></div><div class="bar"><i></i></div><small>Low power mode. Don't text.</small></div>
+        <div class="metric classified"><div class="m-head"><span>Bank Balance</span><b class="val">Classified</b></div><div class="bar"><i></i></div><small>Even the app refuses to look.</small></div>
+        <div class="metric" data-v="94"><div class="m-head"><span>Bad Decisions</span><b class="val">94%</b></div><div class="bar hot"><i></i></div><small>Strong performance. Consistent.</small></div>
+        <div class="metric loading"><div class="m-head"><span>Confidence</span><b class="val">Loading…</b></div><div class="bar"><i></i></div><small>Please wait. Please keep waiting.</small></div>
+        <div class="metric offline"><div class="m-head"><span>Common Sense</span><b class="val">Offline</b></div><div class="bar"><i></i></div><small>Last seen: before that one text.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. BAD DECISION GENERATOR -->
+  <section class="section" id="decision">
+    <header class="section-head reveal">
+      <p class="kicker">// POOR CHOICES, ON DEMAND</p>
+      <h2 class="glitch-h" data-text="MAKE A QUESTIONABLE DECISION">MAKE A QUESTIONABLE DECISION</h2>
+    </header>
+    <div class="decision glass reveal">
+      <p class="decision-out" id="decisionOut" aria-live="polite">Press the button. Regret is optional.</p>
+      <button class="btn btn-primary magnetic" id="decisionBtn" type="button">GENERATE 🔥</button>
+    </div>
+  </section>
+
+  <!-- 8. HUMOUR METER -->
+  <section class="section" id="meter">
+    <header class="section-head reveal">
+      <p class="kicker">// SELF-ASSESSMENT</p>
+      <h2 class="glitch-h" data-text="HOW DARK IS YOUR HUMOUR?">HOW DARK IS YOUR HUMOUR?</h2>
+      <p class="lede">Drag the slider. Be honest. We won't tell anyone. (We will.)</p>
+    </header>
+    <div class="meter glass reveal">
+      <div class="meter-read">
+        <span class="meter-emoji" id="meterEmoji">😇</span>
+        <span class="meter-pct" id="meterPct">0%</span>
+      </div>
+      <h3 class="meter-label" id="meterLabel">Too Innocent</h3>
+      <p class="meter-desc" id="meterDesc"></p>
+      <div class="track"><div class="fill" id="meterFill"></div></div>
+      <input type="range" id="meterRange" min="0" max="100" value="0" step="1" aria-label="Dark humour level">
+      <ul class="ticks" id="meterTicks">
+        <li data-at="0">0%<br><span>Too Innocent</span></li>
+        <li data-at="25">25%<br><span>Mildly Chaotic</span></li>
+        <li data-at="50">50%<br><span>Sarcasm Activated</span></li>
+        <li data-at="75">75%<br><span>Dark Mode Human</span></li>
+        <li data-at="100">100%<br><span>Absolutely Unsupervised 💀</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 9. RED FLAG DETECTOR -->
+  <section class="section" id="flags">
+    <header class="section-head reveal">
+      <p class="kicker">// DIAGNOSTICS</p>
+      <h2 class="glitch-h" data-text="🚩 RED FLAG DETECTOR">🚩 RED FLAG DETECTOR</h2>
+      <p class="lede">Totally scientific. Completely fake. Surprisingly accurate.</p>
+    </header>
+    <div class="scanner glass reveal" id="scanner">
+      <div class="radar" aria-hidden="true"><div class="sweep"></div><span class="blip b1"></span><span class="blip b2"></span><span class="blip b3"></span></div>
+      <p class="scan-status" id="scanStatus" aria-live="polite">Awaiting subject…</p>
+      <div class="scan-result" id="scanResult" hidden>
+        <div class="flag-count"><span id="flagCount">0</span><small>RED FLAGS DETECTED</small></div>
+        <ul class="stats">
+          <li><span>Sarcasm</span><b id="rSarcasm">—</b></li>
+          <li><span>Commitment</span><b id="rCommit">—</b></li>
+          <li><span>Common Sense</span><b id="rSense">—</b></li>
+          <li><span>Drama Potential</span><b id="rDrama">—</b></li>
+          <li><span>Sleep Schedule</span><b id="rSleep">—</b></li>
+        </ul>
+        <p class="verdict">“Congratulations. You're complicated.”</p>
+      </div>
+      <button class="btn btn-primary magnetic" id="scanBtn" type="button">SCAN MY VIBES</button>
+    </div>
+  </section>
+
+  <!-- 10. CONFESSIONS -->
+  <section class="section" id="confessions">
+    <header class="section-head reveal">
+      <p class="kicker">// ANONYMOUS • FICTIONAL • 12:00 AM+</p>
+      <h2 class="glitch-h" data-text="CONFESSIONS AFTER MIDNIGHT">CONFESSIONS AFTER MIDNIGHT</h2>
+    </header>
+    <div class="confess-grid">
+      <article class="confess reveal"><time>12:07 AM</time><p>I said “I'm going to sleep” and stayed online for another 4 hours.</p><span>— Anonymous, awake</span></article>
+      <article class="confess reveal"><time>01:33 AM</time><p>I opened the chat just to check one message.<br>Three hours later, I'm reading messages from 2022.</p><span>— Anonymous, spiralling</span></article>
+      <article class="confess reveal"><time>02:14 AM</time><p>I said I wouldn't catch feelings.<br>Apparently feelings didn't read the agreement.</p><span>— Anonymous, in denial</span></article>
+      <article class="confess reveal"><time>02:51 AM</time><p>I ignored the red flags because they matched the aesthetic.</p><span>— Anonymous, colour-coordinated</span></article>
+      <article class="confess reveal"><time>03:20 AM</time><p>Kal subah jaldi uthna hai bol ke raat ke 3 baj gaye. Alarm ne bhi mujhe give up kar diya.</p><span>— Anonymous, Hinglish edition</span></article>
+      <article class="confess reveal"><time>03:42 AM</time><p>Typed a paragraph. Deleted it. Typed “hi”. Deleted that too. Went to sleep. Then did not sleep.</p><span>— Anonymous, drafts folder</span></article>
+    </div>
+  </section>
+
+</main>
+
+<!-- 15. FOOTER -->
+<footer class="footer">
+  <h2 class="footer-big glitch" data-text="AFTER DARK 🔞">AFTER DARK 🔞</h2>
+  <p class="footer-line">“For adults with questionable humour.”</p>
+  <p class="footer-fine">18+ Fictional Comedy Experience.</p>
+</footer>
+
+<!-- POPUP -->
+<div class="modal" id="popup" role="dialog" aria-modal="true" aria-labelledby="popTitle" hidden>
+  <div class="modal-box glass">
+    <div class="modal-icon" id="popIcon">⚠️</div>
+    <h3 id="popTitle">TITLE</h3>
+    <p id="popText">Text</p>
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="popBtn" type="button">OK</button>
+      <button class="btn btn-ghost" id="popBtn2" type="button" hidden>CLOSE</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
